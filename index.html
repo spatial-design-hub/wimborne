@@ -7,12 +7,14 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
   <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
- 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
   <style>
     body { margin: 0; padding: 0; }
     #map { position: absolute; top: 0; bottom: 0; width: 100%; height: 100vh; }
-    #poi-info { position: absolute; bottom: 0; z-index: 100;left: 0; width: 20%; height: 80vh; padding: 10px; background-color: white; transition: all .5s;font-family: Futura;
+    #poi-info { position: absolute; bottom: 0; z-index: 100;left: 0; width: 20%; height: 80vh; padding: 10px; background-color: white; transition: all .5s;font-family: Poppins;
       background: linear-gradient(to bottom, #F5CB5C, #F5CB5C 20%, white 30%);}
    
       #poi-info.hidden {width: 20%; height: 5vh; padding: 10px; font-size: 1em; ; }
@@ -29,39 +31,51 @@
       font-size: .7em;
       text-align: center;
     }
+    h1{
+      color:white;
+      font-size: 3vw;
+      height: 2.3em; 
+    font-family:Poppins;
+    }
     h2{
       color:white;
       font-size: 2vw;
       
     height: 2.3em; 
+    font-family:Poppins;
     }
     h4{
       color:black;
       font-size: 1vw;
+      font-family:Poppins;
     }
     p{
       font-size: .8vw;
       text-align: left;
+      font-family:Poppins;
     }
     #banner{
-      text-align: center; font-size: 3vw; color:
-      white; background-color: #5C9DB6; height: 9%;width:100%;z-index:100; position:absolute;font-family:Futura;
+      text-align: center; font-size: 3.2vw; color:
+      white; background-color: black; height: 13%;width:100%;z-index:100; position:absolute;font-family:Poppins;
+      vertical-align:middle
     }
     .logo{
       position: absolute;
       left:10px;
       top: 7px;
-      z-index:1000
+      z-index:1000;
+      height: 80px;
     }
     .mapboxgl-ctrl-top-right{
       z-index: 1000;
+      top:6%
     }
   </style>
 </head>
 <body>
   <div id="banner">
-    <img class='logo' src="logo.png" alt="Wimborne Map Logo" style="height: 50px; margin-left: 0px;">
-    Wimborne Minster
+    <img class='logo' src="logo.png" alt="Wimborne Map Logo">
+    <h1>Wimborne Minster</h1>
 </div>
     <div id="poi-info" class="hidden">
 
